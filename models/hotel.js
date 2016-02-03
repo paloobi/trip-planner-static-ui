@@ -8,4 +8,5 @@ var HotelSchema = new mongoose.Schema({
   amenities: { type: [String] }
 });
 
+
 module.exports = mongoose.model('Hotel', HotelSchema);

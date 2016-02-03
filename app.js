@@ -17,7 +17,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 
 // statically serve front end dependencies (bootstrap & jquery)
-
+app.use('/bootstrap', express.static(__dirname + '/bower_components/bootswatch/sandstone'));
+app.use('/jquery', express.static(__dirname + '/bower_components/jquery/dist'));
 
 // serve static files 
 app.use(express.static(__dirname + '/public'))
