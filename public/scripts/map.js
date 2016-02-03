@@ -33,7 +33,8 @@ function initialize_gmaps() {
   // add the marker to the map
   var marker = new google.maps.Marker({
     position: myLatlng,
-    title: "Grace Hopper Academy"
+    title: "Grace Hopper Academy",
+    label: "Grace Hopper Academy"
   });
 
   // add the marker to the map by calling setMap()

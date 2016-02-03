@@ -1,13 +1,3 @@
-body {
-  padding-top: 60px; }
-
-html, body {
-  height: 100%;
-  margin: 0; }
-
-#map {
-  height: 100%; }
-
 #content {
   margin-left: 8px; }
 
@@ -19,3 +9,33 @@ html, body {
 
 .glyphicon-map-marker {
   top: 2px; }
+
+.right-sidepanel {
+  display: inline-block;
+  width: 28%;
+  flex-grow: 1; }
+
+.btn-circle {
+  border-radius: 100%;
+  height: 22px;
+  width: 22px;
+  padding: 1px 0 0 1px;
+  font-size: 14px; }
+
+body {
+  padding-top: 60px; }
+
+html, body {
+  height: 100%;
+  margin: 0; }
+
+#contentWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%; }
+
+#map {
+  height: 100%;
+  width: 50%;
+  flex-grow: 3; }

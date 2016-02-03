@@ -1,0 +1,15 @@
+.right-sidepanel {
+  display: inline-block;
+  width: 28%;
+  flex-grow: 1;
+}
+
+$circleSize: 22px;
+
+.btn-circle {
+  border-radius: 100%;
+  height: $circleSize;
+  width: $circleSize;
+  padding: 1px 0 0 1px;
+  font-size: 14px;
+}
