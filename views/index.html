@@ -2,56 +2,67 @@
 
 {% block content %}
 
-<div id="map"></div>
+<div class="container">
 
-<div class="panel panel-default">
-  
-  <div class="panel-heading">
-    <h1 class="panel-title">Add Destinations</h1>
+  <div class="row">
+
+
+    <div id="map" class="col-lg-8 col-md-8"></div>
+
+    <div class="col-lg-4 col-md-4">
+      <div class="panel panel-default">
+        
+        <div class="panel-heading">
+          <h1 class="panel-title">Add Destinations</h1>
+        </div>
+
+        <form>
+          <div class="form-group sidebar">
+
+            <label for="hotels">Hotels:</label>
+            <select name="hotels" class="form-control">
+
+              {% if all_hotels %}
+                {% for hotel in all_hotels %}
+                  <option value="{{hotel.name}}">{{hotel.name}}</option>
+                {% endfor %}
+              {% endif %}
+
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="restaurants">Restaurants:</label>
+            <select name="restaurants" class="form-control">
+
+              {% if all_restaurants %}
+                {% for restaurant in all_restaurants %}
+                  <option value="{{restaurant.name}}">{{restaurant.name}}</option>
+                {% endfor %}
+              {% endif %}
+
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="activities">Activities:</label>
+            <select name="activities" class="form-control">
+
+              {% if all_activities %}
+                {% for activities in all_activities %}
+                  <option value="{{activities.name}}">{{activities.name}}</option>
+                {% endfor %}
+              {% endif %}
+
+            </select>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
   </div>
-
-  <form>
-    <div class="form-group sidebar">
-
-      <label for="hotels">Hotels:</label>
-      <select name="hotels" class="form-control">
-
-        {% if all_hotels %}
-          {% for hotel in all_hotels %}
-            <option value="{{hotel.name}}">{{hotel.name}}</option>
-          {% endfor %}
-        {% endif %}
-
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="restaurants">Restaurants:</label>
-      <select name="restaurants" class="form-control">
-
-        {% if all_restaurants %}
-          {% for restaurant in all_restaurants %}
-            <option value="{{restaurant.name}}">{{restaurant.name}}</option>
-          {% endfor %}
-        {% endif %}
-
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="activities">Activities:</label>
-      <select name="activities" class="form-control">
-
-        {% if all_activities %}
-          {% for activities in all_activities %}
-            <option value="{{activities.name}}">{{activities.name}}</option>
-          {% endfor %}
-        {% endif %}
-
-      </select>
-    </div>
-
-  </form>
 
 </div>
 
