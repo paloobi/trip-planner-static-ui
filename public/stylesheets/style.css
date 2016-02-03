@@ -1,0 +1,21 @@
+body {
+  padding-top: 60px; }
+
+html, body {
+  height: 100%;
+  margin: 0; }
+
+#map {
+  height: 100%; }
+
+#content {
+  margin-left: 8px; }
+
+#contentBody {
+  margin-left: 4px; }
+
+#firstHeading {
+  margin-bottom: 12px; }
+
+.glyphicon-map-marker {
+  top: 2px; }

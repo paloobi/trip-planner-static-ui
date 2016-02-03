@@ -4,12 +4,28 @@
   <head>
     <title>Trip Planner</title>
     <link rel="stylesheet" href="/bootstrap/bootstrap.min.css" type="text/css">
-    <script src="/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
   </head>
   <body>
+  <div class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <a href="/" class="navbar-brand"><span class="glyphicon glyphicon-map-marker"></span> Trip Planner</a>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/about">About</a></li>
+        <li class="nav-item"><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
     {% block content %}
 
     {% endblock %}
+
+  <script src="/jquery/jquery.min.js"></script>
+  <script 
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6L3NVa77P08HcIAT6epEBvQR6CZo-fTU"></script>
+  <script src="/scripts/script.js"></script>
   </body>
     
 
