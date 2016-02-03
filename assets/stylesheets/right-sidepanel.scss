@@ -1,7 +1,39 @@
+$lightGray: #ababab;
+$darkGray: #232323;
+
 .right-sidepanel {
   display: inline-block;
   width: 28%;
   flex-grow: 1;
+  padding: 24px;
+
+  background:
+  linear-gradient(27deg, lighten(#151515, 25%) 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, lighten(#151515, 25%) 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, lighten(#222, 25%) 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, lighten(#222, 25%) 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, lighten(#1b1b1b, 25%) 10px, transparent 10px),
+  linear-gradient(lighten(#1d1d1d, 25%) 25%, lighten(#1a1a1a, 25%) 25%, lighten(#1a1a1a, 25%) 50%, transparent 50%, transparent 75%, lighten(#242424, 25%) 75%, lighten(#242424, 25%));
+  background-color: lighten(#131313, 25%);
+  background-size: 20px 20px;
+}
+
+form {
+  padding: 14px 0 14px 14px;
+}
+
+.form-group {
+  select {
+    width: 85%;
+    display: inline;
+    padding: 4px 0;
+    height: 32px;
+  }
+  div {
+    padding: 0 4px;
+    width: 10%;
+    display: inline;
+  }
 }
 
 $circleSize: 22px;
@@ -10,6 +42,6 @@ $circleSize: 22px;
   border-radius: 100%;
   height: $circleSize;
   width: $circleSize;
-  padding: 1px 0 0 1px;
+  padding: 1px;
   font-size: 14px;
 }

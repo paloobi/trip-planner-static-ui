@@ -15,8 +15,8 @@
 
       <form>
         <div class="form-group">
-        
-          <label for="hotels">Hotels:</label>
+
+          <label for="hotels">Hotels:</label><br>
           <select name="hotels" class="form-control">
             {% if all_hotels %}
               {% for hotel in all_hotels %}
@@ -24,11 +24,11 @@
               {% endfor %}
             {% endif %}
           </select>
-          <button class="btn btn-success btn-circle">+</button>
+          <div><button class="btn btn-success btn-circle">+</button></div>
         </div>
 
         <div class="form-group">
-          <label for="restaurants">Restaurants:</label>
+          <label for="restaurants">Restaurants:</label><br>
           <select name="restaurants" class="form-control">
             {% if all_restaurants %}
               {% for restaurant in all_restaurants %}
@@ -36,12 +36,11 @@
               {% endfor %}
             {% endif %}
           </select>
-          <button class="btn btn-success btn-circle">+</button>
-
+          <div><button class="btn btn-success btn-circle">+</button></div>
         </div>
 
         <div class="form-group">
-          <label for="activities">Activities:</label>
+          <label for="activities">Activities:</label><br>
           <select name="activities" class="form-control">
             {% if all_activities %}
               {% for activities in all_activities %}
@@ -49,7 +48,7 @@
               {% endfor %}
             {% endif %}
           </select>
-          <button class="btn btn-success btn-circle">+</button>
+          <div><button class="btn btn-success btn-circle">+</button></div>
         </div>
 
       </form>
