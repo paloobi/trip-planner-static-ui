@@ -1,0 +1,22 @@
+{
+  "name": "trip-planner-static-ui",
+  "description": "this is a cool trip planner app",
+  "main": "app.js",
+  "authors": [
+    "ayana@fullstackacademy.com"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/paloobi/trip-planner-static-ui",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "bootswatch": "~3.3.6+1"
+  }
+}
