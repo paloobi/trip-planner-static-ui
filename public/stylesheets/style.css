@@ -30,13 +30,22 @@
   background-size: 20px 20px; }
   .right-sidepanel .panel {
     box-shadow: 0 0 6px black; }
+    .right-sidepanel .panel .panel-title {
+      font-size: 14px;
+      font-family: 'Alegreya Sans SC';
+      text-transform: capitalize; }
   .right-sidepanel form {
     padding: 14px 0 14px 14px; }
+    .right-sidepanel form .form-group label {
+      font-family: 'Catamaran';
+      font-size: 16px; }
     .right-sidepanel form .form-group select {
       width: 85%;
       display: inline;
       padding: 4px 0;
-      height: 32px; }
+      height: 32px;
+      font-family: 'Catamaran';
+      background-color: #fcfcfc; }
     .right-sidepanel form .form-group div {
       padding: 0 4px;
       width: 10%;

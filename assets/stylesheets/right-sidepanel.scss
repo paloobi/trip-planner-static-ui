@@ -20,17 +20,30 @@ $circleSize: 22px;
 
   .panel {
     box-shadow: 0 0 6px black;
+
+    .panel-title {
+      font-size: 14px;
+      font-family: 'Alegreya Sans SC';
+      text-transform: capitalize;
+    }
+
   }
 
   form {
     padding: 14px 0 14px 14px;
 
     .form-group {
+      label {
+        font-family: 'Catamaran';
+        font-size: 16px;
+      }
       select {
         width: 85%;
         display: inline;
         padding: 4px 0;
         height: 32px;
+        font-family: 'Catamaran';
+        background-color: #fcfcfc;
       }
 
       div {
