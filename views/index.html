@@ -7,6 +7,8 @@
 
   <div class="right-sidepanel">
 
+    <div class="sidepanel-wrapper">
+
     <div class="panel panel-default">
       
       <div class="panel-heading">
@@ -52,6 +54,39 @@
         </div>
 
       </form>
+
+    </div>
+
+    <div class="panel panel-default">
+
+      <div class="panel-heading">
+        <h1 class="panel-title">Itinerary</h1>
+      </div>
+
+      <h2>Hotels</h2>
+        <ul>
+        {% if hotels %}
+          {% for hotel in hotels %}
+            <li a href="#">{{hotel.name}}</li>
+          {% endfor %}
+        {% endif %}
+        </ul>
+      <h2>Restaurants</h2>
+        <ul>
+        {% if restaurants %}
+          {% for restaurant in restaurants %}
+            <li a href="#">{{restaurant.name}}</li>
+          {% endfor %}
+        {% endif %}
+        </ul>
+      <h2>Activities</h2>
+        <ul>
+        {% if activities %}
+          {% for activity in activities %}
+            <li a href="#">{{activity.name}}</li>
+          {% endfor %}
+        {% endif %}
+        </ul>
 
     </div>
 

@@ -82,6 +82,10 @@ html, body {
   width: 50%;
   flex-grow: 3; }
 
+#sidepanel-wrapper {
+  display: flex;
+  flex-direction: column; }
+
 @media screen and (min-width: 781px) and (max-width: 856px) {
   .right-sidepanel {
     flex-grow: 2; } }
