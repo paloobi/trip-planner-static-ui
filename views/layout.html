@@ -6,6 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300|Exo+2:400,100,200,300|Exo:400,100,200,300|Alegreya+Sans+SC:400,100,300|Yantramanav:400,100,300|Catamaran:400,100,200,300|Kanit:400,100,200,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/bootstrap/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
   </head>
   <body>
   <div class="navbar navbar-inverse navbar-default navbar-fixed-top">
@@ -33,6 +34,20 @@
   <script 
  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6L3NVa77P08HcIAT6epEBvQR6CZo-fTU"></script>
   <script src="/scripts/map.js"></script>
+  <script>
+
+    $(document).ready(function() {
+      $('.sidepanel-toggler').click(function(e) {
+        var sidepanel = $('.right-sidepanel');
+        if (sidepanel.css('display') === 'none') {
+          sidepanel.css('display') = 'inline-block';
+        } else {
+          sidepanel.css('display') = 'none';
+        }
+      });
+    })
+
+  </script>
   </body>
     
 
