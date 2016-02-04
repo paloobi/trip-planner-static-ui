@@ -5,6 +5,9 @@
   border-bottom: 5px solid #7eaf38;
   box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.3); }
 
+.navbar-brand {
+  font-family: 'Catamaran', sans-serif; }
+
 @media screen and (min-width: 781px) {
   .sidepanel-toggler {
     display: none; }
