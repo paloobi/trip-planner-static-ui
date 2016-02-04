@@ -11,7 +11,7 @@
   <body>
   <div class="navbar navbar-inverse navbar-default navbar-fixed-top">
     <div class="container">
-      <a href="/" class="navbar-brand"><span class="glyphicon glyphicon-map-marker"></span> Trip Planner</a>
+      <a href="/" class="navbar-brand navbar-left"><span class="glyphicon glyphicon-map-marker"></span> Trip Planner</a>
       <ul class="nav navbar-nav navbar-right menu-contents">
         <li class="nav-item"><a href="/">Home</a></li>
         <li class="nav-item"><a href="/about">About</a></li>
@@ -40,9 +40,9 @@
       $('.sidepanel-toggler').on('click', function() {
         var sidepanel = $('.right-sidepanel');
         if (sidepanel.css('display') === 'none') {
-          sidepanel.css('display') = 'inline-block';
+          sidepanel.css({display: 'inline-block'});
         } else {
-          sidepanel.css('display') = 'none';
+          sidepanel.css({display: 'none'};
         }
       });
     });
