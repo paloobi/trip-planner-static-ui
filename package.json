@@ -5,8 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -e html,css,js app.js",
-    "build-css": "node-sass -w -r assets/stylesheets -o public/stylesheets"
+    "start": "nodemon -e scss,html,css,js app.js",
+    "build-css": "node-sass -w -r assets/stylesheets -o public/stylesheets",
+    "setup": "npm install && bower install"
   },
   "author": "ayana@fullstackacademy.com",
   "license": "MIT",
