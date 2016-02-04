@@ -37,7 +37,7 @@
   <script>
 
     $(document).ready(function() {
-      $('.sidepanel-toggler').click(function(e) {
+      $('.sidepanel-toggler').on('click', function() {
         var sidepanel = $('.right-sidepanel');
         if (sidepanel.css('display') === 'none') {
           sidepanel.css('display') = 'inline-block';
@@ -45,7 +45,7 @@
           sidepanel.css('display') = 'none';
         }
       });
-    })
+    });
 
   </script>
   </body>
