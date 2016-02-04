@@ -8,6 +8,9 @@ $circleSize: 22px;
   flex-grow: 1;
   padding: 36px 24px;
 
+  /* background created by Atle Mo (design) & Sébastien Grosjean (code).
+  Source: http://lea.verou.me/css3patterns/#carbon */
+  
   background:
   linear-gradient(27deg, lighten(#151515, 25%) 5px, transparent 5px) 0 5px,
   linear-gradient(207deg, lighten(#151515, 25%) 5px, transparent 5px) 10px 0px,
